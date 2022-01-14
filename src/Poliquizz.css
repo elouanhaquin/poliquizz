@@ -1,0 +1,270 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h2, h3, h4,  .Title{
+
+  font-weight: normal !important;
+}
+h2{
+    min-width: 300px;
+}
+h4{
+  margin: 0 ;
+  color: black;
+  font-size: 150%;
+  font-style: italic;
+}
+canvas{
+  margin-top: 5vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+/*//todo chnge here*/
+#endPanel{
+    display: none;
+}
+
+.BottomText{
+
+  margin-left: auto;
+  margin-right: auto;
+
+  bottom: 0px;
+  color: black;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+.endSection{
+  border: 3px solid;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+  background-color: bisque;
+  border-radius: 30px;
+  margin-bottom: 10px;
+
+}
+.endSection:nth-child(0n+1) {
+  border: 3px solid  rgba(72, 52, 212, 1.0) ;
+}
+.endSection:nth-child(0n+2) {
+  border: 3px solid rgba(34, 166, 179,1.0) ;
+}
+.endSection:nth-child(0n+3) {
+  border: 3px solid rgba(240, 147, 43,1.0)  ;
+}
+.endSection:nth-child(0n+4) {
+  border: 3px solid rgba(249, 202, 36,1.0)  ;
+}
+
+.endScore{
+  font-size: 200%;
+  font-weight: 500 !important;
+  padding: 0;
+    margin: 0;
+}
+
+.customClassBar{
+  margin-top: 0;
+  padding-top:0;
+
+  position: absolute;
+  background-color: transparent !important;
+}
+.pro-sidebar > .pro-sidebar-inner {
+  background-color: transparent !important;
+}
+
+.App-header , .Title{
+  background-color: #f8f8f8;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 2vmin);
+
+  color: black;
+}
+
+.Answer-body, .end-body{
+  background-color: #f8f8f8;
+  min-height: 15vh;
+  flex-basis: 5vh;
+  flex-wrap: wrap;
+  display: flex;
+  /*flex-direction:column;*/
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 2vmin);
+  color: black;
+}
+.end-body{
+  max-width: 500px;
+  min-width: 290px;
+  /*border-radius: 50px;*/
+  margin: auto;
+  margin-bottom: 5%;
+}
+.Answer, .Answer-quizz{
+  flex: 1 0 61%;
+  cursor: pointer;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 20vw;
+  min-width: 300px;
+  border-radius: 30px;
+  border: 5px solid;
+  /*border-color: rgb(131,58,180);*/
+  border-color: black;
+}
+
+ .endAnswer{
+   padding: 0 !important;
+    margin: 10px 0 10px 0px !important ;
+    margin-left: 2vw !important;
+   border: none;
+  /* background-color: #f8f8f8 !important;*/
+  align-self: center;
+   color: black !important;
+  font-weight: 300 !important;
+   /*font-weight: 400 !important;*/
+}
+
+.Replay{
+ margin: auto;
+ border-radius: 30px;
+ border: 5px solid;
+ /*border-color: rgb(131,58,180);*/
+ border-color: rgb(58,180,88) !important;
+}
+
+.Replay{
+  color: black;
+     width: 70vw;
+     max-width: 250px;
+}
+/*
+#best{
+  border: 5px solid;
+  background: rgb(58,180,88);
+  background: linear-gradient(90deg, rgba(58,180,88,1) 0%, rgba(202,225,176,1) 80%, rgba(255,255,255,1) 80%, rgba(255,255,255,1) 100%);
+
+}
+#nice{
+  border: 5px solid;
+  background: rgb(142,180,58);
+/*  background: linear-gradient(90deg, rgba(142,180,58,1) 0%, rgba(202,225,176,1) 65%,  rgba(255,255,255,1) 65%,  rgba(255,255,255,1) 100%);
+}
+#cool{
+  border: 5px solid;
+  background: rgb(180,152,58);
+/*  background: linear-gradient(90deg, rgba(180,152,58,1) 0%, rgba(225,223,176,1) 35%,  rgba(255,255,255,1) 35%,  rgba(255,255,255,1) 100%);
+}
+#okay{
+  border: 5px solid;
+  background: rgb(180,84,58);
+/*  background: linear-gradient(90deg, rgba(180,84,58,1) 0%, rgba(225,197,176,1) 20%,  rgba(255,255,255,1) 20%, rgba(255,255,255,1) 100%);
+}*/
+
+.Answer:hover, .Answer-quizz:hover{
+   animation: 20s bgrandom infinite;
+}
+
+.Answer, .Answer-quizz{  animation: 5s borderrandom infinite; }
+#best{  animation: 10s borderColorBest infinite; }
+#nice{  animation: 10s borderColorNice infinite; }
+#cool{  animation: 10s borderColorCool infinite; }
+#okay{  animation: 10s borderColorOkay infinite; }
+
+@keyframes borderColorBest {
+   0% { border-color: rgb(255, 255, 255); }
+   25% { border-color: rgb(58,180,88,1); }
+
+   50% { border-color: rgb(255, 255, 255); }
+   75% { border-color: rgb(58,180,88,1); }
+   100% { border-color: rgb(255, 255, 255); }
+   }
+@keyframes borderColorNice {
+  0% { border-color:rgb(255, 255, 255); }
+  25% { border-color: rgb(142,180,58); }
+
+  50% { border-color:rgb(255, 255, 255); }
+  75% { border-color:  rgb(142,180,58); }
+  100% { border-color:rgb(255, 255, 255); }
+}
+@keyframes borderColorCool {
+  0% { border-color:rgb(255, 255, 255); }
+  25% { border-color: rgb(180,152,58); }
+
+  50% { border-color:rgb(255, 255, 255); }
+  75% { border-color:  rgb(180,152,58);}
+  100% { border-color:rgb(255, 255, 255); }
+}
+@keyframes borderColorOkay {
+  0% { border-color:rgb(255, 255, 255); }
+  25% { border-color: rgb(180,84,58); }
+
+  50% { border-color:rgb(255, 255, 255); }
+  75% { border-color:  rgb(180,84,58); }
+  100% { border-color:rgb(255, 255, 255); }
+}
+
+@keyframes borderrandom {
+   0% { border-color: rgb(131,58,180); }
+   25% { border-color: rgb(253,29,29); }
+
+   50% { border-color: rgb(131,58,180); }
+   75% { border-color: rgb(252,176,69); }
+   100% { border-color: rgb(131,58,180); }
+   }
+
+@keyframes shadowrandom {
+  0% { box-shadow:  12px 12px 2px 1px rgba(131,58,180, 0.2); }
+  25% { box-shadow: 12px 12px 2px 1px rgba(253,29,29, 0.2); }
+
+  50% { box-shadow: 12px 12px 2px 1px rgba(131,58,180, 0.2); }
+  75% { box-shadow: 12px 12px 2px 1px rgba(252,176,69, 0.2); }
+  100% { box-shadow: 12px 12px 2px 1px rgba(131,58,180, 0.2); }
+  }
+
+
+@keyframes bgrandom {
+  0% { background-color: rgb(255, 255, 255); }
+  100% { background-color:  rgb(255, 255, 255); }
+  }
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,135 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h2, h3, h4,  .Title{
+  font-weight: normal !important;
+}
+
+h4{
+
+  margin: 15vh;
+  color: black;
+  font-size: 150%;
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.BottomText{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  bottom: 0px;
+  color: black;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+.Dark{
+  background-color: #f8f8f8;
+}
+
+.customClassBar{
+  margin-top: 0;
+  padding-top:0;
+  position: absolute;
+  background-color: transparent !important;
+}
+.pro-sidebar > .pro-sidebar-inner {
+  background-color: transparent !important;
+}
+
+.App-header , .Title{
+  background-color: #f8f8f8;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 2vmin);
+
+  color: black;
+}
+
+.Answer-body{
+  background-color: #f8f8f8;
+  min-height: 15vh;
+  flex-basis: 5vh;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction:row;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(7px + 2vmin);
+
+  color: black;
+}
+.Answer{
+  flex: 1 0 61%;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-width: 20vw;
+  border-radius: 30px;
+  border: 5px solid;
+  /*border-color: rgb(131,58,180);*/
+  border-color: linear-gradient(143deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+.Answer:hover{
+   animation: 20s bgrandom infinite;
+}
+
+.Answer{  animation: 5s borderrandom infinite; }
+@keyframes borderrandom {
+   0% { border-color: rgb(131,58,180); }
+   25% { border-color: rgb(253,29,29); }
+
+   50% { border-color: rgb(131,58,180); }
+   75% { border-color: rgb(252,176,69); }
+   100% { border-color: rgb(131,58,180); }
+   }
+
+ @keyframes bgrandom {
+    0% { background-color: rgb(26, 82, 118); }
+    25% { background-color:  rgb(26, 82, 118 ); }
+
+    50% { background-color:  rgb(26, 82, 118); }
+    75% { background-color:  rgb(26, 82, 118 ); }
+    100% { background-color:  rgb(26, 82, 118); }
+    }
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
